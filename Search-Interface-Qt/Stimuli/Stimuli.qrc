@@ -1,0 +1,28 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Resources/Treemap/T0.png</file>
+        <file>Resources/Treemap/T1.png</file>
+        <file>Resources/Treemap/T2.png</file>
+        <file>Resources/Treemap/T3.png</file>
+        <file>Resources/Treemap/T4.png</file>
+        <file>Resources/Treemap/T5.png</file>
+        <file>Resources/Treemap/T6.png</file>
+        <file>Resources/Treemap/T7.png</file>
+        <file>Resources/Treemap/T8.png</file>
+        <file>Resources/Treemap/T9.png</file>
+        <file>Resources/Treemap/T10.png</file>
+        <file>Resources/Treemap/T11.png</file>
+        <file>Resources/Treemap/T12.png</file>
+        <file>Resources/Treemap/T13.png</file>
+        <file>Resources/Treemap/T14.png</file>
+        <file>Resources/Treemap/T15.png</file>
+        <file>Resources/Treemap/T16.png</file>
+        <file>Resources/Treemap/T17.png</file>
+        <file>Resources/Treemap/T18.png</file>
+        <file>Resources/Treemap/T19.png</file>
+        <file>Resources/Treemap/Treemap.png</file>
+        <file>Resources/White-noise.jpg</file>
+        <file>Resources/psychology.png</file>
+        <file>Resources/psychology-72p.png</file>
+    </qresource>
+</RCC>

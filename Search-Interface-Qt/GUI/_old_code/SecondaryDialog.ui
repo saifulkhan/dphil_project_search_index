@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SecondaryDialog</class>
+ <widget class="QWidget" name="SecondaryDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>439</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Secondary Glyph</string>
+  </property>
+  <widget class="SecondaryForm" name="secondaryForm" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>331</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <zorder>okPushButton</zorder>
+   <zorder>cancelPushButton</zorder>
+   <zorder>applyPushButton</zorder>
+  </widget>
+  <widget class="AnimationForm" name="animationForm" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>110</y>
+     <width>421</width>
+     <height>481</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>10</y>
+     <width>77</width>
+     <height>83</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="okPushButton">
+      <property name="text">
+       <string>OK</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="applyPushButton">
+      <property name="text">
+       <string>Apply</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="cancelPushButton">
+      <property name="text">
+       <string>Cancel</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <zorder>secondaryForm</zorder>
+  <zorder>animationForm</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder></zorder>
+  <zorder>applyPushButton</zorder>
+  <zorder>okPushButton</zorder>
+  <zorder>applyPushButton</zorder>
+  <zorder>cancelPushButton</zorder>
+  <zorder>applyPushButton</zorder>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>SecondaryForm</class>
+   <extends>QWidget</extends>
+   <header>Ui/SecondaryForm.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>AnimationForm</class>
+   <extends>QWidget</extends>
+   <header>Ui/AnimationForm.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

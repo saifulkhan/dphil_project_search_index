@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AnimationForm</class>
+ <widget class="QWidget" name="AnimationForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>368</width>
+    <height>504</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Animation Property</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="_anPropertyLabel">
+         <property name="text">
+          <string>Animation Property</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="_anScaleLabel">
+         <property name="text">
+          <string>Start Value</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="_anOpacityLabel">
+         <property name="text">
+          <string>Stop Value</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="durationLabel">
+         <property name="text">
+          <string>Duration (ms)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Easing Curve</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QComboBox" name="propertyComboBox">
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>null</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>opacity</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>flicker</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>fade</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>scale</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>rotationX</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>rotationY</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>rotationZ</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>shutter</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDoubleSpinBox" name="startSpinBox">
+         <property name="minimum">
+          <double>-360.000000000000000</double>
+         </property>
+         <property name="maximum">
+          <double>360.000000000000000</double>
+         </property>
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDoubleSpinBox" name="stopSpinBox">
+         <property name="minimum">
+          <double>-360.000000000000000</double>
+         </property>
+         <property name="maximum">
+          <double>360.000000000000000</double>
+         </property>
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDoubleSpinBox" name="durationSpinBox">
+         <property name="minimum">
+          <double>1.000000000000000</double>
+         </property>
+         <property name="maximum">
+          <double>100000.000000000000000</double>
+         </property>
+         <property name="singleStep">
+          <double>100.000000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="easingComboBox">
+         <item>
+          <property name="text">
+           <string>Linear</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>InQuad</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>OutQuad</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="TransferFunction" name="tf"/>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>TransferFunction</class>
+   <extends>QGraphicsView</extends>
+   <header>TF/TransferFunction.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

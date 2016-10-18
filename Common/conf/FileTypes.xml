@@ -1,0 +1,222 @@
+<?xml version="1.0" ?> 
+<Root>
+<Link url="http://www.fileinfo.com/filetypes/common"> </Link>
+<Category name="Document">
+	<Type name="doc" desc="Microsoft Word Document"> </Type>
+	<Type name="docx" desc="Microsoft Word Open XML Document"> </Type>
+	<Type name="log" desc="Log File"> </Type>
+	<Type name="msg" desc="Outlook Mail Message"> </Type>
+	<Type name="odt" desc="OpenDocument Text Document"> </Type>
+	<Type name="pages" desc="Pages Document"> </Type>
+	<Type name="rtf" desc="Rich Text Format File"> </Type>
+	<Type name="tex" desc="LaTeX Source Document"> </Type>
+	<Type name="txt" desc="Plain Text File"> </Type>
+	<Type name="wpd" desc="WordPerfect Document"> </Type>
+	<Type name="wps" desc="Microsoft Works Word Processor Document"> </Type>
+	<Type name="dat" desc="Data File"> </Type>
+	<Type name="gbr" desc="Gerber File"> </Type>
+	<Type name="ged" desc="GEDCOM Genealogy Data File"> </Type>
+	<Type name="ibooks" desc="Multi-Touch iBook"> </Type>
+	<Type name="key" desc="Keynote Presentation"> </Type>
+	<Type name="keychain" desc="Mac OS X Keychain File"> </Type>
+	<Type name="sdf" desc="Standard Data File"> </Type>
+	<Type name="tar" desc="Consolidated Unix File Archive"> </Type>
+	<Type name="tax2012" desc="TurboTax 2012 Tax Return"> </Type>
+	<Type name="vcf" desc="vCard File"> </Type>
+	<Type name="indd" desc="Adobe InDesign Document"> </Type>
+	<Type name="pct" desc="Picture File"> </Type>
+	<Type name="pdf" desc="Portable Document Format File"> </Type>
+</Category>
+<Category name="Spreadsheet">
+        <Type name="csv" desc="Comma Separated Values File"> </Type>
+	<Type name="xlr" desc="Works Spreadsheet"> </Type>
+	<Type name="xls" desc="Excel Spreadsheet"> </Type>
+	<Type name="xlsx" desc="Microsoft Excel Open XML Spreadsheet"> </Type>
+</Category>
+<Category name="Presentation">
+        <Type name="pps" desc="PowerPoint Slide Show"> </Type>
+        <Type name="ppt" desc="PowerPoint Presentation"> </Type>
+        <Type name="pptx" desc="PowerPoint Open XML Presentation"> </Type>
+</Category>
+<Category name="Audio">
+	<Type name="aif" desc="Audio Interchange File Format"> </Type>
+	<Type name="iff" desc="Interchange File Format"> </Type>
+	<Type name="m3u" desc="Media Playlist File"> </Type>
+	<Type name="m4a" desc="MPEG-4 Audio File"> </Type>
+	<Type name="mid" desc="MIDI File"> </Type>
+	<Type name="mp3" desc="MP3 Audio File"> </Type>
+	<Type name="mpa" desc="MPEG-2 Audio File"> </Type>
+	<Type name="ra" desc="Real Audio File"> </Type>
+	<Type name="wav" desc="WAVE Audio File"> </Type>
+	<Type name="wma" desc="Windows Media Audio File"> </Type>
+</Category>
+<Category name="Video">
+	<Type name="3g2" desc="3GPP2 Multimedia File"> </Type>
+	<Type name="3gp" desc="3GPP Multimedia File"> </Type>
+	<Type name="asf" desc="Advanced Systems Format File"> </Type>
+	<Type name="asx" desc="Microsoft ASF Redirector File"> </Type>
+	<Type name="avi" desc="Audio Video Interleave File"> </Type>
+	<Type name="flv" desc="Flash Video File"> </Type>
+	<Type name="m4v" desc="iTunes Video File"> </Type>
+	<Type name="mov" desc="Apple QuickTime Movie"> </Type>
+	<Type name="mp4" desc="MPEG-4 Video File"> </Type>
+	<Type name="mpg" desc="MPEG Video File"> </Type>
+	<Type name="rm" desc="Real Media File"> </Type>
+	<Type name="srt" desc="SubRip Subtitle File"> </Type>
+	<Type name="swf" desc="Shockwave Flash Movie"> </Type>
+	<Type name="vob" desc="DVD Video Object File"> </Type>
+	<Type name="wmv" desc="Windows Media Video File"> </Type>
+</Category>
+<Category name="Image">
+	<Type name="obj" desc="Wavefront 3D Object File"> </Type>
+	<Type name="bmp" desc="Bitmap Image File"> </Type>
+	<Type name="gif" desc="Graphical Interchange Format File"> </Type>
+	<Type name="jpg" desc="JPEG Image"> </Type>
+	<Type name="png" desc="Portable Network Graphic"> </Type>
+	<Type name="psd" desc="Adobe Photoshop Document"> </Type>
+	<Type name="pspimage" desc="PaintShop Pro Image"> </Type>
+	<Type name="tga" desc="Targa Graphic"> </Type>
+	<Type name="thm" desc="Thumbnail Image File"> </Type>
+	<Type name="tif" desc="Tagged Image File"> </Type>
+	<Type name="tiff" desc="Tagged Image File Format"> </Type>
+	<Type name="yuv" desc="YUV Encoded Image File"> </Type>
+	<Type name="ai" desc="Adobe Illustrator File"> </Type>
+	<Type name="eps" desc="Encapsulated PostScript File"> </Type>
+	<Type name="ps" desc="PostScript File"> </Type>
+	<Type name="svg" desc="Scalable Vector Graphics File"> </Type>
+</Category>
+<Category name="Database">
+	<Type name="accdb" desc="Access 2007 Database File"> </Type>
+	<Type name="db" desc="Database File"> </Type>
+	<Type name="dbf" desc="Database File"> </Type>
+	<Type name="mdb" desc="Microsoft Access Database"> </Type>
+	<Type name="pdb" desc="Program Database"> </Type>
+	<Type name="sql" desc="Structured Query Language Data File"> </Type>
+        <Type name="xml" desc="XML File"> </Type>
+</Category>
+<Category name="Executable">
+	<Type name="apk" desc="Android Package File"> </Type>
+	<Type name="app" desc="Mac OS X Application"> </Type>
+	<Type name="bat" desc="DOS Batch File"> </Type>
+	<Type name="cgi" desc="Common Gateway Interface Script"> </Type>
+	<Type name="com" desc="DOS Command File"> </Type>
+	<Type name="exe" desc="Windows Executable File"> </Type>
+	<Type name="gadget" desc="Windows Gadget"> </Type>
+	<Type name="jar" desc="Java Archive File"> </Type>
+	<Type name="pif" desc="Program Information File"> </Type>
+	<Type name="vb" desc="VBScript File"> </Type>
+	<Type name="wsf" desc="Windows Script File"> </Type>
+	<Type name="dem" desc="Video Game Demo File"> </Type>
+	<Type name="gam" desc="Saved Game File"> </Type>
+	<Type name="nes" desc="Nintendo (NES) ROM File"> </Type>
+	<Type name="rom" desc="N64 Game ROM File"> </Type>
+	<Type name="sav" desc="Saved Game"> </Type>
+        <Type name="o" desc="Compiled object"> </Type>
+</Category>
+<Category name="Web">
+	<Type name="asp" desc="Active Server Page"> </Type>
+	<Type name="aspx" desc="Active Server Page Extended File"> </Type>
+	<Type name="cer" desc="Internet Security Certificate"> </Type>
+	<Type name="cfm" desc="ColdFusion Markup File"> </Type>
+	<Type name="csr" desc="Certificate Signing Request File"> </Type>
+	<Type name="css" desc="Cascading Style Sheet"> </Type>
+	<Type name="htm" desc="Hypertext Markup Language File"> </Type>
+	<Type name="html" desc="Hypertext Markup Language File"> </Type>
+	<Type name="js" desc="JavaScript File"> </Type>
+	<Type name="jsp" desc="Java Server Page"> </Type>
+	<Type name="php" desc="PHP Source Code File"> </Type>
+	<Type name="rss" desc="Rich Site Summary"> </Type>
+	<Type name="xhtml" desc="Extensible Hypertext Markup Language File"> </Type>
+</Category>
+<Category name="System">
+	<Type name="crx" desc="Chrome Extension"> </Type>
+	<Type name="plugin" desc="Mac OS X Plug-in"> </Type>
+	<Type name="fnt" desc="Windows Font File"> </Type>
+	<Type name="fon" desc="Generic Font File"> </Type>
+	<Type name="otf" desc="OpenType Font"> </Type>
+	<Type name="ttf" desc="TrueType Font"> </Type>
+	<Type name="cab" desc="Windows Cabinet File"> </Type>
+	<Type name="cpl" desc="Windows Control Panel Item"> </Type>
+	<Type name="cur" desc="Windows Cursor"> </Type>
+	<Type name="deskthemepack" desc="Windows 8 Desktop Theme Pack File"> </Type>
+	<Type name="dll" desc="Dynamic Link Library"> </Type>
+	<Type name="dmp" desc="Windows Memory Dump"> </Type>
+	<Type name="drv" desc="Device Driver"> </Type>
+	<Type name="icns" desc="Mac OS X Icon Resource File"> </Type>
+	<Type name="ico" desc="Icon File"> </Type>
+	<Type name="lnk" desc="Windows File Shortcut"> </Type>
+	<Type name="sys" desc="Windows System File"> </Type>
+	<Type name="cfg" desc="Configuration File"> </Type>
+	<Type name="ini" desc="Windows Initialization File"> </Type>
+	<Type name="prf" desc="Outlook Profile File"> </Type>
+	<Type name="hqx" desc="BinHex 4.0 Encoded File"> </Type>
+	<Type name="mim" desc="Multi-Purpose Internet Mail Message File"> </Type>
+	<Type name="uue" desc="Uuencoded File"> </Type>
+	<Type name="gpx" desc="GPS Exchange File"> </Type>
+	<Type name="kml" desc="Keyhole Markup Language File"> </Type>
+	<Type name="kmz" desc="Google Earth Placemark File"> </Type>
+        <Type name="md5" desc="Cryptographic"> </Type>
+</Category>
+<Category name="Compressed">
+	<Type name="7z" desc="7-Zip Compressed File"> </Type>
+	<Type name="cbr" desc="Comic Book RAR Archive"> </Type>
+	<Type name="deb" desc="Debian Software Package"> </Type>
+	<Type name="gz" desc="Gnu Zipped Archive"> </Type>
+	<Type name="pkg" desc="Mac OS X Installer Package"> </Type>
+	<Type name="rar" desc="WinRAR Compressed Archive"> </Type>
+	<Type name="rpm" desc="Red Hat Package Manager File"> </Type>
+	<Type name="sitx" desc="StuffIt X Archive"> </Type>
+	<Type name="tar.gz" desc="Compressed Tarball File"> </Type>
+	<Type name="zip" desc="Zipped File"> </Type>
+	<Type name="zipx" desc="Extended Zip File"> </Type>
+        <Type name="bz2" desc="Extended Zip File"> </Type>
+</Category>
+<Category name="DiskImage">
+	<Type name="bin" desc="Binary Disc Image"> </Type>
+	<Type name="cue" desc="Cue Sheet File"> </Type>
+	<Type name="dmg" desc="Mac OS X Disk Image"> </Type>
+	<Type name="iso" desc="Disc Image File"> </Type>
+	<Type name="mdf" desc="Media Disc Image File"> </Type>
+	<Type name="toast" desc="Toast Disc Image"> </Type>
+	<Type name="vcd" desc="Virtual CD"> </Type>
+</Category>
+<Category name="Developer">
+	<Type name="c" desc="C/C++ Source Code File"> </Type>
+	<Type name="class" desc="Java Class File"> </Type>
+	<Type name="cpp" desc="C++ Source Code File"> </Type>
+        <Type name="hpp" desc="C++ header file"> </Type>
+	<Type name="cs" desc="Visual C# Source Code File"> </Type>
+	<Type name="dtd" desc="Document Type Definition File"> </Type>
+	<Type name="fla" desc="Adobe Flash Animation"> </Type>
+	<Type name="h" desc="C/C++/Objective-C Header File"> </Type>
+	<Type name="java" desc="Java Source Code File"> </Type>
+	<Type name="lua" desc="Lua Source File"> </Type>
+	<Type name="m" desc="Objective-C Implementation File"> </Type>
+	<Type name="pl" desc="Perl Script"> </Type>
+	<Type name="py" desc="Python Script"> </Type>
+	<Type name="sh" desc="Bash Shell Script"> </Type>
+	<Type name="sln" desc="Visual Studio Solution File"> </Type>
+	<Type name="vcxproj" desc="Visual C++ Project"> </Type>
+	<Type name="xcodeproj" desc="Xcode Project"> </Type>
+</Category>
+<Category name="CAD">
+        <Type name="dwg" desc="AutoCAD Drawing Database File"> </Type>
+        <Type name="dxf" desc="Drawing Exchange Format File"> </Type>
+        <Type name="3dm" desc="Rhino 3D Model"> </Type>
+        <Type name="3ds" desc="3D Studio Scene"> </Type>
+        <Type name="max" desc="3ds Max Scene File"> </Type>
+        <Type name="dds" desc="DirectDraw Surface"> </Type>
+        <Type name="mdx" desc="CAD Stuff"> </Type>
+</Category>
+<Category name="Backup">
+	<Type name="bak" desc="Backup File"> </Type>
+	<Type name="tmp" desc="Temporary File"> </Type>
+</Category>
+<Category name="Misc">
+	<Type name="crdownload" desc="Chrome Partially Downloaded File"> </Type>
+	<Type name="ics" desc="iCalendar File"> </Type>
+	<Type name="msi" desc="Windows Installer Package"> </Type>
+	<Type name="part" desc="Partially Downloaded File"> </Type>
+	<Type name="torrent" desc="BitTorrent File"> </Type>
+</Category>
+</Root>

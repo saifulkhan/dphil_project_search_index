@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ChannelMappingForm</class>
+ <widget class="QWidget" name="ChannelMappingForm">
+  <property name="windowTitle">
+   <string>Mapping</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="pricolorLabel_2">
+         <property name="text">
+          <string>Primary Color</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="seccolorLabel">
+         <property name="text">
+          <string>Sec Color</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="secsizeLabel">
+         <property name="text">
+          <string>Sec Size</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="secshapeLabel">
+         <property name="text">
+          <string>Sec Shape</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="anLabel">
+         <property name="text">
+          <string>Animation</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QComboBox" name="pricolorCombobox">
+         <item>
+          <property name="text">
+           <string>Default</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Type</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Size</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Rank</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Date</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="seccolorCombobox">
+         <item>
+          <property name="text">
+           <string>Default</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Type</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Size</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Rank</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Date</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="secsizeCombobox">
+         <item>
+          <property name="text">
+           <string>Default</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Type</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Size</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Rank</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Date</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="secshapeCombobox">
+         <item>
+          <property name="text">
+           <string>Default</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Type</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Size</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Rank</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Date</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="anComboBox">
+         <item>
+          <property name="text">
+           <string>Default</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Type</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Size</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Rank</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Date</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
