@@ -62,6 +62,7 @@ Language-Processor/test/Test
 # Index
 Index/CMakeFiles/ 
 Index/CMakeCache.txt 
+Index/CTestTestfile.cmake
 Index/Makefile 
 Index/install_manifest.txt 
 Index/cmake_install.cmake  
