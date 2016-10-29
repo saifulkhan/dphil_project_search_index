@@ -13,10 +13,11 @@ The search engine consists of following sub projects.
  2. Simulate-Data     <-- Create a large-scale data/files to be searched
  3. LanguageProcessor <-- Search: WordNet reader 
  4. Index             <-- Index: to create, read, and update index (of files to be searched)
- 	4.1 Index-Manager-Qt
+  Index-Manager-Qt
  5. Ontology          <-- Search: ontology modules to support knowledge-assisted search, e.g., query expansion, ranking
  6. Query-Processor   <-- Search: receives query, search, rank, and returns
- 	6.1 Query-Processor-NodeJsWrapper
+  
+  Query-Processor-NodeJsWrapper
  7. Search-Interface-Qt <-- UI
 
 
