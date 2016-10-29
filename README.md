@@ -18,7 +18,7 @@ The search engine consists of 5 sub projects.
 - The fileInfo (information related to a file (search result) data structure is also defined here.
  
 	
-## Compile 
+## Compile and Test
 
 We shall install this project-related deliverables in `$HOME/install/`. 
 
@@ -27,9 +27,7 @@ We shall install this project-related deliverables in `$HOME/install/`.
 - `make`
 - `make install`
 
-## Test 
-
-Write basic test cases in `test` directory and run it. Note: add the libraries, e.g., libCommon.so, libtinyxml.so, etc in the LD_LIBRARY path
+Some basic test cases are available in `test` directory and run it. Note: add the libraries, e.g., libCommon.so, libtinyxml.so, etc in the LD_LIBRARY path
 
 - `cd test`
 - `ldd Test`  <-- check the dependent libraries
@@ -39,7 +37,7 @@ Write basic test cases in `test` directory and run it. Note: add the libraries, 
 # Simulate-Data
 Generate simulated dataset (a file containing file metadata information) based on the statistics available in the `Simulate-Data/Stat` folder.
 
-## Compile and Run
+## Compile, Run, and Generate Simulated Data
 
 - Read the `DataManager.pro` file and load the project in QtCreator or use 'qmake' tool to generate the binary `DataManager`.
 
