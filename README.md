@@ -1,14 +1,20 @@
-This is my DPhil research prototype.
-Entire version of the prototype is not available here, and the code is available with minimal comments and test cases.
-Nevertheless, the code can be useful particulary for learning, educational, and research purposes.
+# About
+
+This is a research prototype of (a) an Enterprise Search Engine (C++) and (b) a Search Interface (Qt and Angular, d3). 
+
+
+This repository contains the Enterprise Search Engine (back-end code).
+Entire version of the prototype (part of my DPhil) is not open sourced. This code contains minimal comments and test cases.
+Nevertheless, it can particulary be useful for learning, educational, and research purposes.
 
 
 The search engine consists of 5 sub projects. 
-- Common
-- Simulate-Data
-- Inverted-Index
-- Onto-Search
-- Search-Interface-Qt.
+- Common		
+- Simulate-Data        <-- Create a large-scale data/files to be searched
+- LanguageProcessor    <-- Search: WordNet reader 
+- Ontology             <-- Search: ontology modules to support knowledge-assisted search, e.g., query expansion, ranking
+- Inverted-Index       <-- Index: to create, read, and update index (of files to be searched) 
+- Search-Interface-Qt. <-- UI
 
 
 # Common  
@@ -17,18 +23,16 @@ The search engine consists of 5 sub projects.
 - The fileInfo (information related to a file (search result) data structure is also defined here.
  
 	
-## Compile 
+## Compile and Test
 
-We shall install this project-related deliverables in `$HOME/install/`. 
+We shall install this project-related deliverables (header files and Common.so) in `$HOME/install/`. 
 
 - `cd Common`
 - `cmake -DCMAKE_INSTALL_PREFIX=$HOME/install/ -DBUILD_SHARED_LIBS=ON -DCMAKE_BUILD_TYPE=Debug `
 - `make`
 - `make install`
 
-## Test 
-
-Write basic test cases in `test` directory and run it. Note: add the libraries, e.g., libCommon.so, libtinyxml.so, etc in the LD_LIBRARY path
+Some basic test cases are available in `test` directory and run it. Note: add the libraries, e.g., libCommon.so, libtinyxml.so, etc in the LD_LIBRARY path
 
 - `cd test`
 - `ldd Test`  <-- check the dependent libraries
@@ -38,7 +42,8 @@ Write basic test cases in `test` directory and run it. Note: add the libraries, 
 # Simulate-Data
 Generate simulated dataset (a file containing file metadata information) based on the statistics available in the `Simulate-Data/Stat` folder.
 
-## Compile and Run
+## Compile, Run, and Generate Simulated Data
+
 
 - Read the `DataManager.pro` file and load the project in QtCreator or use 'qmake' tool to generate the binary `DataManager`.
 
@@ -48,12 +53,40 @@ Generate simulated dataset (a file containing file metadata information) based o
 
 - In order to generate the statistics available in the `Simulate-Data/Stat` folder, run the` DataManager` binary (select Statistics -> click Apply).   
 
+### Dependencies
+Common project
 
-# Inverted-Index
 
-This is a Enterprise Search Engine Index code (minimal version based on Java Lucene). 
 
-TBD
+# Language-Processor
+	
+## Compile and Test
+
+We shall install this project-related deliverables (header files and LanguageProcessor.so) in `$HOME/install/`. 
+
+- `cd Language-Processor`
+- `cmake -DCMAKE_INSTALL_PREFIX=$HOME/install/ -DBUILD_SHARED_LIBS=ON -DCMAKE_BUILD_TYPE=Debug `
+- `make`
+- `make install`
+- `cd test`
+- `ldd Test`  <-- check the dependent libraries
+- `./Test`
+
+### Dependencies
+Common project
+
+
+# Index
+
+This is a enterprise search engine Inverted-Index code (minimal version based on Java Lucene). 
+
+## Compile, Test, and Create Index
+
+
+
+### Dependencies
+Common, LanguageProcessor
+
 
 # Onto-Search
 
