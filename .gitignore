@@ -52,12 +52,14 @@ Language-Processor/CMakeLists.txt.user
 Language-Processor/CTestTestfile.cmake
 Language-Processor/cmake_install.cmake
 Language-Processor/Makefile
+Language-Processor/CMakeCache.txt
 Language-Processor/test/CMakeFiles/
 Language-Processor/test/Makefile
 Language-Processor/test/CMakeLists.txt.user
 Language-Processor/test/CTestTestfile.cmake
 Language-Processor/test/cmake_install.cmake
 Language-Processor/test/Test
+Language-Processor/test/Makefile
 #
 # Index
 Index/CMakeFiles/ 
