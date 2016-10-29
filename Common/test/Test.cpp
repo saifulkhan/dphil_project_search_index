@@ -10,10 +10,10 @@
 
 using namespace std;
 
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ PROTOTYPES  / Main~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+// prototypes
 void test_tokeniseStrToVector();
 void test_FileInfoX();
-
 void test_function();
 void test_DateTime();
 int  test_libconfig();
@@ -21,18 +21,15 @@ void test_fileSizeUnitConversion();
 void test_unitToSize();
 void testFileTypeXml();
 void test_DateTime();
-
+void test_randomNumber();
 
 int main(int argc, char* argv[])
 {
     test_FileInfoX();
     test_tokeniseStrToVector();
     test_unitToSize();
-    //test_DateTime();
-    //testFileTypeXml();
-
-    //FileInfoX fileinfox();
-    //cout << fileinfox;
+    test_DateTime();
+    testFileTypeXml();
 
     return EXIT_SUCCESS;
 }
@@ -48,9 +45,6 @@ void test_FileInfoX()
     f1 = f2;
     cout << "f1: " << f1 << endl;
 }
-
-
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ test_tokeniseStrToVector ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 void test_tokeniseStrToVector()
 {
@@ -72,7 +66,6 @@ void test_tokeniseStrToVector()
     cout << endl;
 }
 
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ DateTime ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 void test_DateTime()
 {
@@ -90,32 +83,8 @@ void test_DateTime()
     cout << dt.age("2011-01-05T23:00:00", "2011-03-06T23:00:00");
     cout << dt.age("2011-01-05T06:00:00", "2011-01-05T10:00:00");
 
-    /*
-     *
-    // Used in cache
-    DateTime dt;
-    time_t rawtime;
-    struct tm * timeinfo;
-    char buffer[80];
-    time (&rawtime);
-    timeinfo = localtime(&rawtime);
-    strftime(buffer,80,"%Y-%m-%dT%H:%M:%S",timeinfo);
-    string to(buffer);
-
-    Cache* cache = Cache::instance();
-    vector <FileInfo> tempVec = cache->search("draft");
-    for (vector <FileInfo>::iterator i = tempVec.begin(); i != tempVec.end(); ++i)
-    {
-        FileInfoX fileInfoX(*i);
-        fileInfoX.m_agex = (dt.age(fileInfoX.m_fileInfo.m_lastModified, to));
-        //cout << fileInfoX.m_agex;
-    }
-     */
-
 }
 
-
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ COMMON ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 void testFileTypeXml()
 {
@@ -133,7 +102,6 @@ void testFileTypeXml()
 
 }
 
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Size Unit ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 void test_fileSizeUnitConversion()
 {
@@ -164,8 +132,6 @@ void test_unitToSize()
     cout << unitToSize("2000 MB") << endl;
 }
 
-
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 void test_randomNumber()
 {

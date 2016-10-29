@@ -10,8 +10,6 @@
 
 using namespace std;
 
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ FILEINFO ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
 class FileInfo
 {
 public:
@@ -45,8 +43,6 @@ public:
 };
 ostream& operator<<(ostream& os, const FileInfo& fileInfo);
 
-
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ FILEINFOX ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /*
  *  This is extended datastructure of FileInfo, containing search related information.

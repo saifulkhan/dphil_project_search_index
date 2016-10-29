@@ -1,6 +1,5 @@
 #include "FileInfo.h"
 
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ FILEINFO ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*
  * Mainly used when we use simulated data.
  */
@@ -45,9 +44,6 @@ FileInfo& FileInfo::operator=(const FileInfo &source)
 }
 
 
-/*
- * http://msdn.microsoft.com/en-us/library/vstudio/1z2f6c2k.aspx
- */
 ostream& operator<<(ostream& os, const FileInfo& fileInfo)
 {
     os << "DocID: "         << fileInfo.m_docId
@@ -65,7 +61,6 @@ ostream& operator<<(ostream& os, const FileInfo& fileInfo)
 }
 
 
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ FILEINFOX ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 FileInfoX::FileInfoX(FileInfo fileInfo)
 {

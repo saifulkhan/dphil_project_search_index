@@ -14,9 +14,6 @@ T randomNo(const T &min, const T &max)
 }
 
 
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ CLASSES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
 RandInt::RandInt ()
 {
     srand(time(NULL));
@@ -71,19 +68,19 @@ int RandDraw::draw ()
     // Application which call it should take care of this.
     if (bucket.empty())
     {
-       cout << __PRETTY_FUNCTION__ << "Empty bucket." << endl ;
+       // cout << __PRETTY_FUNCTION__ << "Empty bucket." << endl ;
         return -1;
     }
 
     int randIndex = randInt->getRandInt (0, (bucket.size() - 1));
     int no = bucket[randIndex].first;
 
-    cout << __PRETTY_FUNCTION__ << "BucketSize= " << bucket.size() << " Index(Rand)= " << randIndex << " Drawn=" << no << endl;
+    // cout << __PRETTY_FUNCTION__ << "BucketSize= " << bucket.size() << " Index(Rand)= " << randIndex << " Drawn=" << no << endl;
 
     if (++ bucket[randIndex].second == totalTrials)
     {
         bucket.erase(bucket.begin() + randIndex);
-        cout << __PRETTY_FUNCTION__ << "Removing: " << randIndex << endl;
+        // cout << __PRETTY_FUNCTION__ << "Removing: " << randIndex << endl;
     }
 
     return no;

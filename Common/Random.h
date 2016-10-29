@@ -11,8 +11,6 @@ using namespace std;
 
 template <class T> T randomNo(const T &min, const T &max);
 
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ CLASSES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 class RandInt
 {
     private:

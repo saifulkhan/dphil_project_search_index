@@ -20,17 +20,14 @@
 using namespace std;
 
 
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ STRING-NO conversion ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-string int64ToString(const  std::int64_t& no);                                 // usage: numberToString(number)
+//  STRING conversions 
+string int64ToString(const  std::int64_t& no);  // usage: numberToString(number)
 std::int64_t stringToInt64(const string &str);
 double stringToDouble(const string &str);
 wstring stringToWString(const string &s);
 string wstringToString(const wstring &ws);
 string stringToLower(const string &str);
 
-
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ NUMBER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 // calculate size : convert bytes to TB, GB, etc.
 #define DIM(x) ( sizeof(x) / sizeof(*(x)) )
@@ -40,8 +37,7 @@ uint64_t unitToSize(const string sizeStr);
 double normalizeScale( double originalScale, double newScale, double originalValue );
 double normalize( double originalStart, double originalEnd, double newStart, double newEnd, double originalValue);
 
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ OTHER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+// Bit operations
 void setBit(int &number, const unsigned &bit);
 bool getBitVal(const int &number, const unsigned &bit);
 

@@ -1,8 +1,7 @@
 #include "Algorithm.h"
 
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ STRING tokenise ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 /*
+ * String tokenise and return a vector
  * ref: http://www.oopweb.com/CPP/Documents/CPPHOWTO/Volume/C++Programming-HOWTO-7.html
  */
 vector<string> tokeniseStrToVector(const string& str, const string& delimiters)
@@ -27,8 +26,10 @@ vector<string> tokeniseStrToVector(const string& str, const string& delimiters)
     return tokens;
 }
 
-
-// TODO: FIX this dirty code, make it regex based
+/*
+ * String tokenise and return a Queue
+ * TODO: Improve this code (use regex?) 
+ */
 queue<string> tokenise(const string &str, const string &delimiter)
 {
     string s = str;

@@ -8,8 +8,6 @@
 #include <map>
 #include <tinyxml.h>
 
-//#define FILE_TYPES_XML @FILE_TYPES_XML@
-
 using namespace std;
 
 class FileTypes

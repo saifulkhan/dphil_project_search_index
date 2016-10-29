@@ -1,6 +1,5 @@
 #include "Conversion.h"
 
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ STRING ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 string int64ToString(const int64_t& no)
 {
@@ -48,8 +47,6 @@ string stringToLower(const string &str)
     return _str;
 }
 
-
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ NUMBER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 /*
@@ -111,9 +108,7 @@ uint64_t unitToSize(const string sizeStr)
 
 /*
  * Mainly used by FSMapping.cpp for mapping, file attribute to glyph attribute
- *
  */
-
 double normalizeScale( double originalScale, double newScale, double originalValue )
 {
     double newValue = ceil( originalValue / originalScale )  * newScale;
@@ -125,19 +120,15 @@ double normalizeScale( double originalScale, double newScale, double originalVal
  * Source min = originalStart, max =originalEnd
  * Target scale min = newStart, max = newEnd
  * This function converts any originalValue between (originalStart - originalEnd) to newValue between (newStart, newEnd).
- * Short video: http://math.wonderhowto.com/how-to/normalize-data-set-into-another-scale-365491/
  */
 
 double normalize( double originalStart, double originalEnd,  // original range
                   double newStart, double newEnd,            // desired range
-                  double originalValue)                   // value to convert
+                  double originalValue)                      // value to convert
 {
     double newValue = newStart + ( ( (originalValue - originalStart) * (newEnd - newStart) ) / (originalEnd - originalStart) );
     return newValue;
 }
-
-
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ OTHER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 void setBit(int &number, const unsigned &bit)
