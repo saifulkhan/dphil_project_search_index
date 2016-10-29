@@ -9,12 +9,12 @@ Nevertheless, it can particulary be useful for learning, educational, and resear
 
 
 The search engine consists of following sub projects. 
-1. Common		
-2. Simulate-Data        <-- Create a large-scale data/files to be searched
-3. LanguageProcessor    <-- Search: WordNet reader 
-4. Ontology             <-- Search: ontology modules to support knowledge-assisted search, e.g., query expansion, ranking
-5. Inverted-Index       <-- Index: to create, read, and update index (of files to be searched) 
-6. Search-Interface-Qt. <-- UI
+ 1. Common		
+ 2. Simulate-Data        <-- Create a large-scale data/files to be searched
+ 3. LanguageProcessor    <-- Search: WordNet reader 
+ 4. Ontology             <-- Search: ontology modules to support knowledge-assisted search, e.g., query expansion, ranking
+ 5. Inverted-Index       <-- Index: to create, read, and update index (of files to be searched) 
+ 6. Search-Interface-Qt. <-- UI
 
 
 # Common  
@@ -25,7 +25,7 @@ The search engine consists of following sub projects.
 	
 ## Compile and Test
 
-We shall install this project-related deliverables (header files and Common.so) in `$HOME/install/`. 
+We shall install this project-related deliverables (header files and libCommon.so) in `$HOME/install/`. 
 
 - `cd Common`
 - `cmake -DCMAKE_INSTALL_PREFIX=$HOME/install/ -DBUILD_SHARED_LIBS=ON -DCMAKE_BUILD_TYPE=Debug `
@@ -62,7 +62,7 @@ Common project
 	
 ## Compile and Test
 
-We shall install this project-related deliverables (header files and LanguageProcessor.so) in `$HOME/install/`. 
+We shall install this project-related deliverables (header files and libLanguageProcessor.so) in `$HOME/install/`. 
 
 - `cd Language-Processor`
 - `cmake -DCMAKE_INSTALL_PREFIX=$HOME/install/ -DBUILD_SHARED_LIBS=ON -DCMAKE_BUILD_TYPE=Debug `
@@ -79,8 +79,29 @@ Common project
 # Index
 
 This is a enterprise search engine Inverted-Index code (minimal version based on Java Lucene). 
+We shall install this project-related deliverables (header files and libIndex.so) in `$HOME/install/`. 
 
 ## Compile, Test, and Create Index
+
+- `cd Index`
+- `cmake -DCMAKE_INSTALL_PREFIX=$HOME/install/ -DBUILD_SHARED_LIBS=ON -DCMAKE_BUILD_TYPE=Debug`
+- `make`
+- `make install`
+
+Create an Index before runing a simple test to check if it is working.
+
+- Make sure the simulated data is available in the install path, here, $HOME/install/stat/Data.csv
+- `mkdir $HOME/install/index` <-- index files will be created here using the file $HOME/install/stat/Data.csv
+- `cd Index`
+- This is a very simple Qt prohject. Open the IndexManager.pro with QtCreator or use qmake.
+- Generate a `IndexManager` binary 
+- ``
+
+
+Test to check if the inverted index is working
+
+- `cd Analyser`
+- `./Test` <-- Will expect the inverted index in `$HOME/install/`
 
 
 
