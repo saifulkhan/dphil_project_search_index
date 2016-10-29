@@ -1,7 +1,7 @@
 This is a research prototype of (a) an Enterprise Search Engine (C++) and (b) a Search Interface (Qt and Angular, d3).
 
 Entire version of the prototype (part of my DPhil) is not open sourced. This code contains minimal comments and test cases.
-Nevertheless, it code can particulary be useful for learning, educational, and research purposes.
+Nevertheless, it can particulary be useful for learning, educational, and research purposes.
 
 
 The search engine consists of 5 sub projects. 
