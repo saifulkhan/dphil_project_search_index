@@ -1,3 +1,4 @@
+# Common project
 Common/build/
 Common/CMakeFiles/
 Common/cmake_install.cmake
@@ -13,8 +14,13 @@ Common/test/Makefile
 Common/test/install_manifest.txt
 Common/test/CMakeCache.txt
 Common/test/Test
+#
+# Simulate-Data
+Simulate-Data/DataManager.pro.user
+Simulate-Data/build/
 
-
+#
+#
 .idea/
 build/
 *.exe
