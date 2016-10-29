@@ -88,15 +88,19 @@ We shall install this project-related deliverables (header files and libIndex.so
 - `make`
 - `make install`
 
-Create an Index before runing a simple test to check if it is working.
+Create an Index from the simulated dataset, even before runing a simple test to check if it is working.
 
+Dependency check
 - Make sure the simulated data is available in the install path, here, $HOME/install/stat/Data.csv
 - `mkdir $HOME/install/index` <-- index files will be created here using the file $HOME/install/stat/Data.csv
-- `cd Index`
+
+Create Index:
+- `cd IndexManager`
 - This is a very simple Qt prohject. Open the IndexManager.pro with QtCreator or use qmake.
 - Generate a `IndexManager` binary 
-- ``
-
+- execute in QtCreator or `build/Indexmanager` (by default Simulation is selected and click OK, we are not using crawler).
+- `ls $HOME/install/index`
+`2.del  2.fdi  2.fdt  2.pro  2.tii  seg.fmn  segments` <-- the index files 
 
 Test to check if the inverted index is working
 
