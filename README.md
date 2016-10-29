@@ -1,10 +1,14 @@
-This is a DPhil research prototype with minimal comments and test cases. 
+This is my DPhil research prototype.
+Entire version of the prototype is not available here, and the code is available with minimal comments and test cases.
+Nevertheless, the code can be useful particulary for learning, educational, and research purposes.
+
+
 The search engine consists of 5 sub projects. 
 - Common
 - Simulate-Data
 - Inverted-Index
 - Onto-Search
-- Search-Interface-Qt : The web-based user interface is in a different [repository](https://github.com/saifulkhan/Search-Interface). 
+- Search-Interface-Qt.
 
 
 # Common  
@@ -32,9 +36,9 @@ Write basic test cases in `test` directory and run it. Note: add the libraries, 
 
 
 # Simulate-Data
-Generate simulated dataset based on the statistics available in the `Simulate-Data/Stat` folder.
+Generate simulated dataset (a file containing file metadata information) based on the statistics available in the `Simulate-Data/Stat` folder.
 
-## Compile
+## Compile and Run
 
 - Read the `DataManager.pro` file and load the project in QtCreator or use 'qmake' tool to generate the binary `DataManager`.
 
@@ -49,14 +53,14 @@ Generate simulated dataset based on the statistics available in the `Simulate-Da
 
 This is a Enterprise Search Engine Index code (minimal version based on Java Lucene). 
 
+TBD
+
 # Onto-Search
 
+TBD
 
 # Search-Interface-Qt
-This is initial version of the search interface. Eventually we moved to web-based interface [repository](https://github.com/saifulkhan/Search-Interface). 
+This is initial version of the search interface.
+Eventually we moved to a web-based (Angular and D3) search interface which is in [this repository](https://github.com/saifulkhan/Search-Interface).
 
-# TBD
-- Cleanup all the projects
-- Add comments
-- Update the README file
--  
+TBD
