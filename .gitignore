@@ -14,10 +14,25 @@ Common/test/Makefile
 Common/test/install_manifest.txt
 Common/test/CMakeCache.txt
 Common/test/Test
+# Language-Processor
+Language-Processor/build/
+Language-Processor/CMakeFiles/
+Language-Processor/CMakeLists.txt.user
+Language-Processor/CTestTestfile.cmake
+Language-Processor/cmake_install.cmake
+Language-Processor/test/CMakeFiles/
+Language-Processor/test/CMakeLists.txt.user
+Language-Processor/test/CTestTestfile.cmake
+Language-Processor/test/cmake_install.cmake
+Language-Processor/test/Test
+
 #
 # Simulate-Data
 Simulate-Data/DataManager.pro.user
 Simulate-Data/build/
+#
+# Inverted-Index
+
 
 #
 #
