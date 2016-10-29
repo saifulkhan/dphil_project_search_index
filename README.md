@@ -10,11 +10,14 @@ Nevertheless, it can particulary be useful for learning, educational, and resear
 
 The search engine consists of following sub projects. 
  1. Common		
- 2. Simulate-Data        <-- Create a large-scale data/files to be searched
- 3. LanguageProcessor    <-- Search: WordNet reader 
- 4. Ontology             <-- Search: ontology modules to support knowledge-assisted search, e.g., query expansion, ranking
- 5. Inverted-Index       <-- Index: to create, read, and update index (of files to be searched) 
- 6. Search-Interface-Qt. <-- UI
+ 2. Simulate-Data     <-- Create a large-scale data/files to be searched
+ 3. LanguageProcessor <-- Search: WordNet reader 
+ 4. Index             <-- Index: to create, read, and update index (of files to be searched)
+ 	4.1 Index-Manager-Qt
+ 5. Ontology          <-- Search: ontology modules to support knowledge-assisted search, e.g., query expansion, ranking
+ 6. Query-Processor   <-- Search: receives query, search, rank, and returns
+ 	6.1 Query-Processor-NodeJsWrapper
+ 7. Search-Interface-Qt <-- UI
 
 
 # Common  
@@ -100,12 +103,12 @@ Create an Index from the simulated dataset, even before runing a simple test to 
 - Generate a `IndexManager` binary 
 - execute in QtCreator or `build/Indexmanager` (by default Simulation is selected and click OK, we are not using crawler).
 - `ls $HOME/install/index`
+
 `2.del  2.fdi  2.fdt  2.pro  2.tii  seg.fmn  segments` <-- the index files 
 
 ### Test to check if the inverted index is working
 
-- `cd Analyser`
-- `./Test` <-- Will expect the inverted index in `$HOME/install/`
+- `./Analyser/Test` <-- Will expect the inverted index in `$HOME/install/`
 
 
 
