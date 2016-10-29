@@ -97,8 +97,8 @@ Create an Index from the simulated dataset, even before runing a simple test to 
 - Make sure the simulated data is available in the install path, here, $HOME/install/stat/Data.csv
 - `mkdir $HOME/install/index` <-- index files will be created here using the file $HOME/install/stat/Data.csv
 
-### Create Index
-- `cd IndexManager`
+## Index-Manager-Qt : Create Index
+- `cd Index-Manager-Qt`
 - This is a very simple Qt prohject. Open the IndexManager.pro with QtCreator or use qmake.
 - Generate a `IndexManager` binary 
 - execute in QtCreator or `build/Indexmanager` (by default Simulation is selected and click OK, we are not using crawler).
@@ -110,18 +110,18 @@ Create an Index from the simulated dataset, even before runing a simple test to 
 
 - `./Analyser/Test` <-- Will expect the inverted index in `$HOME/install/`
 
+ 
 
+# Ontology
+TODO
 
-### Dependencies
-Common, LanguageProcessor
+# Query-Processor
+## Query-Processor-NodeJsWrapper 
+TODO
 
-
-# Onto-Search
-
-TBD
 
 # Search-Interface-Qt
 This is initial version of the search interface.
 Eventually we moved to a web-based (Angular and D3) search interface which is in [this repository](https://github.com/saifulkhan/Search-Interface).
 
-TBD
+TODO
