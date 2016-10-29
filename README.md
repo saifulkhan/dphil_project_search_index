@@ -8,13 +8,13 @@ Entire version of the prototype (part of my DPhil) is not open sourced. This cod
 Nevertheless, it can particulary be useful for learning, educational, and research purposes.
 
 
-The search engine consists of 5 sub projects. 
-- Common		
-- Simulate-Data        <-- Create a large-scale data/files to be searched
-- LanguageProcessor    <-- Search: WordNet reader 
-- Ontology             <-- Search: ontology modules to support knowledge-assisted search, e.g., query expansion, ranking
-- Inverted-Index       <-- Index: to create, read, and update index (of files to be searched) 
-- Search-Interface-Qt. <-- UI
+The search engine consists of following sub projects. 
+1. Common		
+2. Simulate-Data        <-- Create a large-scale data/files to be searched
+3. LanguageProcessor    <-- Search: WordNet reader 
+4. Ontology             <-- Search: ontology modules to support knowledge-assisted search, e.g., query expansion, ranking
+5. Inverted-Index       <-- Index: to create, read, and update index (of files to be searched) 
+6. Search-Interface-Qt. <-- UI
 
 
 # Common  
