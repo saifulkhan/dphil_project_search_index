@@ -14,7 +14,8 @@ The search engine consists of following sub projects.
  3. **LanguageProcessor** <-- Search: WordNet reader 
  4. **Index**             <-- Index: to create, read, and update index (of files to be searched)
   1. **Index-Manager-Qt**
- 5. **Ontology**          <-- Search: ontology modules to support knowledge-assisted search, e.g., query expansion, ranking
+ 5. **Ontology**          <-- Search: ontology modules to support knowledge-assisted search
+  1. **Ontology-Manager**
  6. **Query-Processor**   <-- Search: receives query, search, rank, and returns
   1. **Query-Processor-NodeJsWrapper**
  7. **Search-Interface-Qt** <-- UI
@@ -113,7 +114,7 @@ Create an Index from the simulated dataset, even before runing a simple test to 
  
 
 # Ontology
-TODO
+**Note: the ontology is stored in a Sparksee graph database**
 
 # Query-Processor
 ## Query-Processor-NodeJsWrapper 
