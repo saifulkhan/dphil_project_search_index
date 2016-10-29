@@ -117,27 +117,22 @@ Create an Index from the simulated dataset, even before runing a simple test to 
 
 ## Prerequisite : Sparksee graph database
 The ontology is stored in a Sparksee graph database. This code is implemented using API version 5 / 5.2. Download it from [http://www.sparsity-technologies.com/#download](this link). The evaluation version only supports a limited number of nodes and edges.
-However, the research licence was free.
+Research licence is free.
 
 I downloaded and copied the sparkesse header files, i.e., `sparksee/*/*.h` and library `libsparksee.so` in `$HOME/install` folder.
 It can be anywhere as long as the paths are defined corrtly in the `CMakeLists.txt` file.
 
-## Compile and Create Ontologies
+## Compile
 
 - `cd Ontology`
 - `cmake -DCMAKE_INSTALL_PREFIX=$HOME/install/ -DBUILD_SHARED_LIBS=ON -DCMAKE_BUILD_TYPE=Debug`
 - `make; make install`
 
-
+## Ontology-Manager : create or test ontologies
 - `mkdir $HOME/install/gdb` <-- place where the database file will be created
 - `./Ontology-Manager/Manager` <-- this file will create **fresh ontologies**, i.e., all the weights are set to dafualt value.
 
-Change the value `# define MAX_COUNT 15000` if you have a sparksee license.
-
-
-
-## Ontology-Manager
-This ...
+If you have a sparksee license then change the value `# define MAX_COUNT 150000` to support more nodes.
 
 # Query-Processor
 ## Query-Processor-NodeJsWrapper 
