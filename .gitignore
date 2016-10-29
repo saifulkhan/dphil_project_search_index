@@ -1,4 +1,30 @@
-# Common project
+##
+.idea/
+build/
+*.exe
+*.o
+*.so
+*.pro.user
+*.pro.user.*
+*.autosave
+*.user
+**conflicted*
+*~
+*.log
+*.sql
+*.sqlite
+
+.DS_Store
+.DS_Store?
+._*
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.swn
+*.swo
+*.swp Common project
+#
+# Common
 Common/build/
 Common/CMakeFiles/
 Common/cmake_install.cmake
@@ -14,50 +40,36 @@ Common/test/Makefile
 Common/test/install_manifest.txt
 Common/test/CMakeCache.txt
 Common/test/Test
+#
+# Simulate-Data
+Simulate-Data/DataManager.pro.user
+Simulate-Data/build/
+#
 # Language-Processor
 Language-Processor/build/
 Language-Processor/CMakeFiles/
 Language-Processor/CMakeLists.txt.user
 Language-Processor/CTestTestfile.cmake
 Language-Processor/cmake_install.cmake
+Language-Processor/Makefile
 Language-Processor/test/CMakeFiles/
+Language-Processor/test/Makefile
 Language-Processor/test/CMakeLists.txt.user
 Language-Processor/test/CTestTestfile.cmake
 Language-Processor/test/cmake_install.cmake
 Language-Processor/test/Test
-
 #
-# Simulate-Data
-Simulate-Data/DataManager.pro.user
-Simulate-Data/build/
-#
-# Inverted-Index
-
-
-#
-#
-.idea/
-build/
-*.exe
-*.o
-*.so
-*.pro.user
-*.pro.user.*
-*.autosave
-*.user
-**conflicted*
-*~
-
-*.log
-*.sql
-*.sqlite
-
-.DS_Store
-.DS_Store?
-._*
-.Trashes
-ehthumbs.db
-Thumbs.db
-*.swn
-*.swo
-*.swp
+# Index
+Index/CMakeFiles/ 
+Index/CMakeCache.txt 
+Index/Makefile 
+Index/install_manifest.txt 
+Index/cmake_install.cmake  
+Index/libIndex.so  
+Index/Analyser/CMakeFiles/ 
+Index/Analyser/cmake_install.cmake 
+Index/Analyser/CTestTestfile.cmake 
+Index/Analyser/Makefile 
+Index/Analyser/Test 
+Index/Index-Manager-Qt/build/ 
+Index/Index-Manager-Qt/IndexManager.pro.user 
