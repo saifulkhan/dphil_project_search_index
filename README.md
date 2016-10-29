@@ -9,11 +9,12 @@ Nevertheless, it can particulary be useful for learning, educational, and resear
 
 
 The search engine consists of 5 sub projects. 
-- Common
-- Simulate-Data
-- Inverted-Index
-- Onto-Search
-- Search-Interface-Qt.
+- Common		
+- Simulate-Data        <-- Create a large-scale data/files to be searched
+- LanguageProcessor    <-- Search: WordNet reader 
+- Ontology             <-- Search: ontology modules to support knowledge-assisted search, e.g., query expansion, ranking
+- Inverted-Index       <-- Index: to create, read, and update index (of files to be searched) 
+- Search-Interface-Qt. <-- UI
 
 
 # Common  
@@ -24,7 +25,7 @@ The search engine consists of 5 sub projects.
 	
 ## Compile and Test
 
-We shall install this project-related deliverables in `$HOME/install/`. 
+We shall install this project-related deliverables (header files and Common.so) in `$HOME/install/`. 
 
 - `cd Common`
 - `cmake -DCMAKE_INSTALL_PREFIX=$HOME/install/ -DBUILD_SHARED_LIBS=ON -DCMAKE_BUILD_TYPE=Debug `
@@ -43,6 +44,7 @@ Generate simulated dataset (a file containing file metadata information) based o
 
 ## Compile, Run, and Generate Simulated Data
 
+
 - Read the `DataManager.pro` file and load the project in QtCreator or use 'qmake' tool to generate the binary `DataManager`.
 
 - Run the` DataManager` binary (select Simulation -> input a number of simulated file metadata to be generated -> click Apply). 
@@ -51,12 +53,40 @@ Generate simulated dataset (a file containing file metadata information) based o
 
 - In order to generate the statistics available in the `Simulate-Data/Stat` folder, run the` DataManager` binary (select Statistics -> click Apply).   
 
+### Dependencies
+Common project
 
-# Inverted-Index
 
-This is a Enterprise Search Engine Index code (minimal version based on Java Lucene). 
 
-TBD
+# Language-Processor
+	
+## Compile and Test
+
+We shall install this project-related deliverables (header files and LanguageProcessor.so) in `$HOME/install/`. 
+
+- `cd Language-Processor`
+- `cmake -DCMAKE_INSTALL_PREFIX=$HOME/install/ -DBUILD_SHARED_LIBS=ON -DCMAKE_BUILD_TYPE=Debug `
+- `make`
+- `make install`
+- `cd test`
+- `ldd Test`  <-- check the dependent libraries
+- `./Test`
+
+### Dependencies
+Common project
+
+
+# Index
+
+This is a enterprise search engine Inverted-Index code (minimal version based on Java Lucene). 
+
+## Compile, Test, and Create Index
+
+
+
+### Dependencies
+Common, LanguageProcessor
+
 
 # Onto-Search
 
