@@ -1,9 +1,0 @@
-=============================================================================
-Version 5.2.0 (June 2015)
-=============================================================================
-- New community detection algorithm.
-- Concurrency performance improvements in read transactions.
-- Shortest path algorithms optimization.
-- Added support for 64 bits processors on Android.
-- Bug fixing.
-
