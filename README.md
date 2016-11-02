@@ -11,10 +11,11 @@ Nevertheless, it can particulary be useful for learning, educational, and resear
 The search engine consists of following sub projects. 
  1. **Common**
  2. **Simulate-Data**     <-- Create a large-scale data/files to be searched
- 3. **LanguageProcessor** <-- Search: WordNet reader 
+ 3. **LanguageProcessor** <-- Search: WordNet reader  
  4. **Index**             <-- Index: to create, read, and update index (of files to be searched)
   1. **Index-Manager-Qt**
- 5. **Ontology**          <-- Search: ontology modules to support knowledge-assisted search, e.g., query expansion, ranking
+ 5. **Ontology**          <-- Search: ontology modules to support knowledge-assisted search
+  1. **Ontology-Manager**
  6. **Query-Processor**   <-- Search: receives query, search, rank, and returns
   1. **Query-Processor-NodeJsWrapper**
  7. **Search-Interface-Qt** <-- UI
@@ -113,7 +114,25 @@ Create an Index from the simulated dataset, even before runing a simple test to 
  
 
 # Ontology
-TODO
+
+## Prerequisite : Sparksee graph database
+The ontology is stored in a Sparksee graph database. This code is implemented using API version 5 / 5.2. Download it from [http://www.sparsity-technologies.com/#download](this link). The evaluation version only supports a limited number of nodes and edges.
+Research licence is free.
+
+I downloaded and copied the sparkesse header files, i.e., `sparksee/*/*.h` and library `libsparksee.so` in `$HOME/install` folder.
+It can be anywhere as long as the paths are defined corrtly in the `CMakeLists.txt` file.
+
+## Compile
+
+- `cd Ontology`
+- `cmake -DCMAKE_INSTALL_PREFIX=$HOME/install/ -DBUILD_SHARED_LIBS=ON -DCMAKE_BUILD_TYPE=Debug`
+- `make; make install`
+
+## Ontology-Manager : create or test ontologies
+- `mkdir $HOME/install/gdb` <-- place where the database file will be created
+- `./Ontology-Manager/Manager` <-- this file will create **fresh ontologies**, i.e., all the weights are set to dafualt value.
+
+If you have a sparksee license then change the value `# define MAX_COUNT 150000` to support more nodes.
 
 # Query-Processor
 ## Query-Processor-NodeJsWrapper 
