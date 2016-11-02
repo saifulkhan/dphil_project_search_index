@@ -2,19 +2,20 @@
 
 CDict::CDict()
 {
-	OpenDict();
+    OpenDict();
 }
 
 CDict::~CDict()
 {
-	mapDict.clear();
+    mapDict.clear();
 }
 
 void CDict::OpenDict()
 {
+
     // TODO: Commented
-/*
-    string dict( "/mnt/D/Dropbox/DPhil-Research/Code/Search-Project/Server/Cache/words.dict" );
+    /*
+    string dict( "words.dict" );
 
 	FILE *fpDict;
     if (( fpDict = fopen( (char*) dict.c_str(), "r") ) == NULL) {
@@ -33,9 +34,9 @@ void CDict::OpenDict()
 */
 }
 
-bool CDict::IsWord(string& str) const
+bool CDict::IsWord(string &str) const
 {
     //if (mapDict.find(str) != mapDict.end())
-        //return true;
-	return false;
+    //return true;
+    return false;
 }

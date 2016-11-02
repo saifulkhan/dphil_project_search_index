@@ -1,0 +1,1 @@
+/usr/bin/c++    -Wall -std=c++11 -g    CMakeFiles/Manager.dir/Manager.cpp.o  -o Manager  -L/home/saiful/install/lib -rdynamic ../libOntology.so -lCommon -ltinyxml -lLanguageProcessor -lsparksee -Wl,-rpath,/home/saiful/install/lib:/home/saiful/git-code/Enterprise-Search-Engine/Ontology 

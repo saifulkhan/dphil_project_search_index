@@ -31,7 +31,6 @@ void TypeOntology::createOntology()
 
     Value value;
 
-
         /*
          * Scan the vector of Index/s
          */
@@ -40,12 +39,12 @@ void TypeOntology::createOntology()
             string lemma = it->lemma;
             if (m_wordnet->filter(lemma) || lemma.compare("astragalar") == 0 || lemma.compare("astragalus") == 0)
                 continue;
-            cout <<  ++counter << " %\r";
+            cout <<  ++counter << " \r";
 
-            //if (lemma.compare("draft") == 0 || lemma.compare("budget") == 0 || lemma.compare("building") == 0)
-            //{
-
-
+            // In case license is vailable comment this.
+            if(counter > MAX_COUNT) {
+                break;
+            }     
             #ifdef DBG_GDB
             cout << "Create node: " << lemma << endl;
             #endif
@@ -63,8 +62,6 @@ void TypeOntology::createOntology()
                 oid_t typeNode = this->addNode(m_ntype_filetype, m_nattr_filetype, value.SetString(stringToWString(cat)));
                 this->addEdge(m_etype_term2type, m_eattr_weight, lemmaNode, typeNode, value.SetDouble(0.5));
             }
-
-           //} //if-temp
 
         } // End for, scan the vector of Index/s
 

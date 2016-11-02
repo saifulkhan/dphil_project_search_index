@@ -8,40 +8,13 @@
 using namespace std;
 
 typedef struct Query Query;
+
 struct Query
 {
     int no;
     vector <string> name;
     vector <string> type;
     pair <double, double> size;   // byte
-    //QDateTime mdatetime;
-/*
-    Query(vector <string> name = ,
-          vector <string> type,
-          pair <double, double> size)
-    {
-        this->name = name;
-        this->type = type;
-        this->size = size;
-    }
-
-    Query &operator=(const Query &q)
-    {
-        this->name = q.name;
-        this->type = q.type;
-        this->size = q.size;
-        return *this;
-    }
-
-    Query(const Query &q)
-    {
-        this->name = q.name;
-        this->type = q.type;
-        this->size = q.size;
-    }
-*/
-
-
 };
 
 inline ostream& operator<<(ostream &os, const Query q)

@@ -37,9 +37,13 @@ void SizeOntology::createOntology()
             string lemma = it->lemma;
             if (m_wordnet->filter(lemma))
                 continue;
-            //if (lemma.compare("draft") == 0 || lemma.compare("budget") == 0 || lemma.compare("building") == 0)
-            //{
+ 
             cout <<  ++counter << " %\r";
+ 
+            // In case license is vailable comment this.
+            if(counter > MAX_COUNT) {
+                break;
+            }
 
             #ifdef DBG_GDB
             cout << "Create node: " << lemma << endl;

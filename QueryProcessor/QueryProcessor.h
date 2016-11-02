@@ -43,8 +43,6 @@ public:
     // Used with QtStandalone code
     vector<FileInfoX> searchQtStandalone(const string& query);
     void feedbackQtStandalone();
-
-
 };
 
 #endif // QUERYPROCESSOR_H

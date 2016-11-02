@@ -7,6 +7,10 @@
 #include "Ontology.h"
 #include "FileTypes.h"
 
+// This is a guessed value : Sparksee trial version only support limited number of nodes.
+// In case license is vailable comment the section of code in the cpp file.
+# define MAX_COUNT 150000
+
 using namespace std;
 
 class SizeOntology : public Ontology, private ExportManager

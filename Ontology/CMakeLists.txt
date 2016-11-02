@@ -1,6 +1,5 @@
 ## CMakeList ##
-## Cache    ##
-
+ 
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8.12)
 PROJECT(Ontology)
 
@@ -22,7 +21,6 @@ FILE(GLOB_RECURSE MY_SOURCE_FILES   "${CMAKE_CURRENT_SOURCE_DIR}/OntologyFactory
                                     "${CMAKE_CURRENT_SOURCE_DIR}/TermOntology.cpp"
                                     "${CMAKE_CURRENT_SOURCE_DIR}/SizeOntology.cpp")
 
-
 FILE(GLOB_RECURSE MY_INCLUDE_FILES  "${CMAKE_CURRENT_SOURCE_DIR}/OntologyFactory.h"
                                     "${CMAKE_CURRENT_SOURCE_DIR}/Ontology.h"
                                     "${CMAKE_CURRENT_SOURCE_DIR}/TypeOntology.h"
@@ -31,7 +29,7 @@ FILE(GLOB_RECURSE MY_INCLUDE_FILES  "${CMAKE_CURRENT_SOURCE_DIR}/OntologyFactory
 
 FILE(GLOB_RECURSE MY_CONF_FILES    "${CMAKE_CURRENT_SOURCE_DIR}/License/Configuration.cfg")
 
-## Target/Install path##
+## Target/Install path ##
 
 set(MY_INSTALL_LIBRARY_PATH  "${CMAKE_INSTALL_PREFIX}/lib")
 set(MY_INSTALL_INCLUDE_PATH  "${CMAKE_INSTALL_PREFIX}/include/${PROJECT_NAME}")
@@ -57,24 +55,26 @@ add_definitions(-DSIZE_ONTOLOGY="${CMAKE_INSTALL_PREFIX}/gdb/SizeOntology.gdb")
 
 INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}
                     "${CMAKE_INSTALL_PREFIX}/include/Common"
-                    "${CMAKE_INSTALL_PREFIX}/include/LanguageProcessor")  #+ Depends on Common & LanguageProcessor
-
+                    "${CMAKE_INSTALL_PREFIX}/include/LanguageProcessor"
+                    "${CMAKE_INSTALL_PREFIX}/include/sparksee")  # Depends on Common, LanguageProcessor, and sparksee graph database
+                                                                 # I copied the header files, i.e., sparksee/*/*.h and libsparksee.so in CMAKE_INSTALL_PREFIX.
+                                                                  
 ## Build shared library ##
 ADD_DEFINITIONS(-DLPP_BUILDING_LIB)
 ADD_LIBRARY(${PROJECT_NAME} SHARED ${MY_SOURCE_FILES})
 
 ## Install ##
 INSTALL(FILES ${MY_INCLUDE_FILES} DESTINATION ${MY_INSTALL_INCLUDE_PATH})  # .h files
-install(TARGETS ${PROJECT_NAME} DESTINATION ${MY_INSTALL_LIBRARY_PATH})	   # libCache.so
+install(TARGETS ${PROJECT_NAME} DESTINATION ${MY_INSTALL_LIBRARY_PATH})	   # .so
 install(FILES ${MY_CONF_FILES} DESTINATION ${MY_INSTALL_CONF_PATH})   # Configuration file / license
 
 
 ##############################################################################################
 ## Manager/ Test ##
-## Process subdirectoryies here, Test binary ##
+## Process subdirectories here, Test binary ##
 ##############################################################################################
 enable_testing()
-ADD_SUBDIRECTORY("${PROJECT_SOURCE_DIR}/Manager")
+ADD_SUBDIRECTORY("${PROJECT_SOURCE_DIR}/Ontology-Manager")
 
 ## Debug messages ##
 
