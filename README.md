@@ -139,8 +139,7 @@ If you have a sparksee license then change the value `# define MAX_COUNT 150000`
 TODO
 
 
-# Search-Interface-Qt
-This is initial version of the search interface.
-Eventually we moved to a web-based (Angular and D3) search interface which is in [this repository](https://github.com/saifulkhan/Search-Interface).
+# UI: Search-Interface
+Web-based (Angular and D3) search interface which is in [this repository](https://github.com/saifulkhan/dphil_project_search_interface).
 
 TODO
